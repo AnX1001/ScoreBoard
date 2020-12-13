@@ -83,7 +83,7 @@ updateBtn.onclick = () => {
   document.querySelector(".nameAndPoints").textContent =
     array[0] + " -" + " poeng";
 
-  // iterate pointsArray and namesArray to make animations bars....
+
   console.log("just points " + pointsArray);
   console.log("just names " + namesArray);
 
