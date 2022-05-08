@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2020/02/29/14/00/landscape-4890162_960_720.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+}
+
+.winnerRanking {
+  display: flex;
+  width: 100%;
+}
+
+.Winner {
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border-radius: 8px;
+  /* border: 1px solid black; */
+  display: grid;
+  justify-items: center;
+  margin-right: auto;
+}
+
+.winnerImg {
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/23/23/53/girl-2674857__340.jpg");
+  background-size: cover;
+  object-fit: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  border-radius: 50%;
+  text-align: center;
+
+  height: auto;
+  padding-top: 100%;
+  width: 100%;
+  min-width: 200px;
+}
+
+.nameAndPoints {
+  background-color: black;
+  border-radius: 8px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8vw;
+  width: fit-content;
+  padding: 10px;
+  color: orange;
+}
+
+.addPointsBtn {
+  height: 45px;
+  width: 120px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: orange;
+  margin-right: 10px;
+}
+
+.selWinner {
+  height: 45px;
+  width: 120px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: orange;
+}
+
+.updateBtn {
+  height: 45px;
+  width: 120px;
+  margin-top: 20px;
+  padding: 5px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: orange;
+}
+
+.updateExistingScores {
+  height: 45px;
+  width: 120px;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: orange;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button {
+  user-select: none;
+}
+
+input {
+  height: 45px;
+  width: 120px;
+  margin-top: 20px;
+  margin-right: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+
+input:focus {
+  border: 2px dashed goldenrod;
+}
+
+.addPointsBtn:focus,
+.updateBtn:focus {
+  border: 2px dashed goldenrod;
+}
+
+.updateExistingScores:focus {
+  border: 2px dashed goldenrod;
+}
+
+.toppList {
+  width: 12vw;
+  max-width: 250px;
+  height: inherit;
+  max-height: 320px;
+  overflow-y: scroll;
+  text-align: center;
+  padding: 10px;
+  background-color: orange;
+  opacity: 0.9;
+  padding: 10px;
+  border-radius: 8px;
+  color: black;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+.awards {
+  display: flex;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.inputsPrizes {
+  display: flex;
+  justify-content: center;
+}
+
+.inputAwardsContainer {
+  width: fit-content;
+}
+
+.newContender {
+  color: black;
+  background-color: gold;
+  border-radius: 8px;
+  padding: 15px;
+  font-family: Comic Sans MS;
+  font-size: 3vw;
+  animation: Pulsate 2s forwards;
+  width: fit-content;
+  margin: -100px 0 0 200px;
+  position: absolute;
+}
+
+@keyframes Pulsate {
+  100% {
+    opacity: 0;
+    transform: scale(1.6);
+  }
+
+  90% {
+    opacity: 0.5;
+    transform: scale(1.6);
+  }
+
+  50% {
+    transform: scale(1.6);
+  }
+}
+
+.boxRankingAwards {
+  display: flex;
+  height: 42vh;
+  text-align: center;
+  width: max-content;
+}
+
+.ranking {
+  font-size: clamp(0.5rem, 1.5vw, 1.4rem);
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 600px;
+  height: fit-content;
+}
+
+.premier {
+  font-size: max(2.5vw, 20px);
+  color: black;
+  text-align: center;
+}
+
+.premierBox {
+  width: 100%;
+  background-color: orange;
+  border-radius: 8px;
+  height: fit-content;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.prizeTitle {
+  font-size: (1rem, 2vw, 2rem);
+  margin-top: 80px;
+  color: black;
+
+  border-radius: 8px;
+  padding-bottom: 10px;
+}
+
+.illustration {
+  width: fit-content;
+  max-width: 200px;
+  height: 10vh;
+  max-height: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  margin: 10px;
+  margin-bottom: 2vw;
+}
+
+.superGrid {
+  width: fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 5%;
+}
+
+.fire {
+  height: 22vh;
+  position: fixed;
+  margin-top: 80px;
+  margin-left: 80px;
+}

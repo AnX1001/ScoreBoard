@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poengtavlen</title>
+    <link rel="stylesheet" href="./styling/index.css">
+    <link rel="shortcut icon" href="">
+</head>
+
+<body>
+
+    <div class="superGrid">
+
+        <div class="winnerRanking">
+
+            <div class="Winner">
+                <div class="winnerImg"></div>
+                <h2 class="nameAndPoints">Navn og poeng</h2>
+            </div>
+
+            <div class="boxRankingAwards">
+                <div class="toppList">
+                    <h2 class="rangering">Rangering</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- end of winnerRanking -->
+
+
+        <div class="inputsPrizes">
+
+
+            <div class="inputs">
+                <input type="text" class="inpName" placeholder="Navn" autofocus>
+                <input type="number" class="inpPoints" placeholder="Antall poeng">
+                <button class="addPointsBtn">Legg til ny spiller og poeng</button>
+                <button class="updateBtn">Oppdater rangering</button>
+
+
+                <input type="text" class="selName" placeholder="velg spiller" autofocus>
+                <input type="number" class="modifyPoints" placeholder="ny poengskår">
+                <button class="updateExistingScores">Oppdater spillers poengskår</button>
+                <button class="selWinner">Kår vinneren</button>
+                <div class="premierBox">
+                    <div class="awards"></div>
+                    <div class="premierTitlesBox"></div>
+                </div>
+            </div>
+
+            <!-- end of inputsPrizes -->
+
+
+        </div>
+        <!-- end of supergrid -->
+
+
+        <!-- fireworks & music sound -->
+
+        <audio id="soundFire" src="./media/fireworks.mp3"></audio>
+        <audio id="soundMusic" src="./media/music.mp3"></audio>
+
+</body>
+<script src="./script/index.js"></script>
+<script src="./script/effects.js"></script>
